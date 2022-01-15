@@ -1,9 +1,9 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
 
 const userSchema = mongoose.Schema({
     name: {
         type: String,
-        max: 50
+        maxlength: 50 // 최대 길이
     },
     email: {
         type: String,
